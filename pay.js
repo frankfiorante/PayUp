@@ -15,3 +15,11 @@ function btnSelectOwe(){
     $('#btnowe').addClass("w3-blue");
     $('#btnget').removeClass("w3-blue");
 }
+
+//Save names through local storage
+let namesArray = localStorage.getItem('names') ? JSON.parse(localStorage.getItem('names')) : [];
+document.getElementById('form').addEventListener('submit', function() {
+    var names = document.getElementById('name').value;
+    namesArray.push(names);
+    localStorage.setItem('names', JSON.stringify(namesArray));
+})

@@ -28,6 +28,15 @@ a:link, a:visited, a:hover, a:active {text-decoration: none;}
         <div class="w3-container">
           <hr>
             <p><a style="width: 100%;" class="w3-button w3-blue w3-round" href="pay.html">New Amount</a></p>
+            <table class="w3-table" id="transactions">
+              
+            </table>
+            <table class="w3-table w3-text-grey">
+              <tr>
+                <td>Sum:</td>
+                <td>$0.00</td>
+              </tr>
+            </table>
           <hr>
         </div>
       </div>
@@ -40,6 +49,12 @@ a:link, a:visited, a:hover, a:active {text-decoration: none;}
   
   <!-- End Page Container -->
 </div>
+
+<script>
+  window.onload = function() {
+    console.log(localStorage.getItem('names'));
+  }
+</script>
 
 </body>
 </html>

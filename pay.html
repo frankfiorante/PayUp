@@ -27,11 +27,11 @@ a:link, a:visited, a:hover, a:active {text-decoration: none;}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-money fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>PayUp!</h2>
           <hr>
         <div class="w3-container">
-          <form class="w3-padding-16" action="index.html">
-            <p><input class="w3-input" id="name" type="text" placeholder="Name"></p>
-            <p><input class="w3-input" id="description" type="text" placeholder="Description"></p>
-            <p><input class="w3-input" id="amount" type="number" placeholder="$1.00"></p>
-            <p><input class="w3-input" id="date" type="date"></p>
+          <form class="w3-padding-16" id="form" action="index.html">
+            <p><input required class="w3-input" id="name" type="text" placeholder="Name"></p>
+            <p><input  class="w3-input" id="description" type="text" placeholder="Description"></p>
+            <p><input  class="w3-input" id="amount" type="number" placeholder="$1.00"></p>
+            <p><input  class="w3-input" id="date" type="date"></p>
             <p class="w3-round">
               <button style=" width: 48%;" class="w3-button w3-round" type="button" onclick="btnSelectGet()" id="btnget">get</button>
               <button style="width: 50%;" class="w3-button w3-round" type="button" onclick="btnSelectOwe()" id="btnowe">owe</button>
