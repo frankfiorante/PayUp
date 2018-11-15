@@ -7,11 +7,11 @@ $('#date').val(today);
 
 //Set Buttons to Blue When Clicked
 function btnSelectGet(){
-    $('#btnget').addClass("w3-blue")
-    $('#btnowe').removeClass("w3-blue")
+    $('#btnget').addClass("w3-blue");
+    $('#btnowe').removeClass("w3-blue");
 }
 
 function btnSelectOwe(){
-    $('#btnowe').addClass("w3-blue")
-    $('#btnget').removeClass("w3-blue")
+    $('#btnowe').addClass("w3-blue");
+    $('#btnget').removeClass("w3-blue");
 }
