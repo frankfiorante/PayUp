@@ -3,10 +3,11 @@ $(document).ready(function() {
     console.log("descriptions " + localStorage.getItem('descriptions'));
     console.log("amounts " + localStorage.getItem('amounts'));
     console.log("dates " + localStorage.getItem('dates'));
+    console.log("owners " + localStorage.getItem('owners'));
 
     //Payment amount was made
     if (localStorage.length > 0) {
-        
+
     //No amount made
     } else {
         
