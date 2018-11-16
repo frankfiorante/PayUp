@@ -33,7 +33,6 @@ document.getElementById('form').addEventListener('submit', function() {
     amountsArray.push(amounts);
     datesArray.push(dates);
 
-
     localStorage.setItem('names', JSON.stringify(namesArray));
     localStorage.setItem('descriptions', JSON.stringify(descriptionsArray));
     localStorage.setItem('amounts', JSON.stringify(amountsArray));
