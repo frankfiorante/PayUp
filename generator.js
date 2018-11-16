@@ -1,15 +1,21 @@
-$(document).ready(function() {
-    console.log("names " + localStorage.getItem('names'));
-    console.log("descriptions " + localStorage.getItem('descriptions'));
-    console.log("amounts " + localStorage.getItem('amounts'));
-    console.log("dates " + localStorage.getItem('dates'));
-    console.log("owners " + localStorage.getItem('owners'));
+const namesData = JSON.parse(localStorage.getItem('names'));
+const amountsData = JSON.parse(localStorage.getItem('amounts'));
 
+$(document).ready(function() {
+    var items = ["names","descriptions","amounts","dates","owners"];
+    items.forEach(element => {
+        console.log(element + " :" + localStorage.getItem(element));
+    });
+    
     //Payment amount was made
     if (localStorage.length > 0) {
-
+        $('#trans').show();
+        $('#transTable').show();
+        
     //No amount made
     } else {
-        
+        $('#trans').hide();
+        $('#transTable').hide();
+
     }
 });

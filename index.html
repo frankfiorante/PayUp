@@ -29,14 +29,20 @@ a:link, a:visited, a:hover, a:active {text-decoration: none;}
         <div class="w3-container">
           <hr>
             <p><a style="width: 100%;" class="w3-button w3-blue w3-round" href="pay.html">New Amount</a></p>
-            <table class="w3-table" id="transactions">
-              
-            </table>
-            <table class="w3-table w3-text-grey">
-              <tr>
-                <td>Sum:</td>
-                <td>$0.00</td>
-              </tr>
+            
+            <!-- Populate this through JS using local storage -->
+            <h3 class="w3-text-grey w3-padding-16" id="trans">Transactions</h3>
+            <table id="transTable" class="w3-table w3-text-grey">
+              <thead>
+                <th>Name</th>
+                <th>Amount</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Frank</td>
+                  <td>$14.00</td>
+                </tr>
+              </tbody>
             </table>
 
           <hr>

@@ -33,13 +33,9 @@ document.getElementById('form').addEventListener('submit', function() {
     var dates = document.getElementById('date').value;
     
     var owners = "";
-    if (pressed == 1) {
-        owners = "get";
-    } else if (pressed == 2) {
-        owners = "owe";
-    } else {
-        owners = "";
-    }
+    if (pressed == 1) { owners = "get"; } 
+    else if (pressed == 2) { owners = "owe"; } 
+    else { owners = ""; }
 
     namesArray.push(names);
     descriptionsArray.push(descriptions);
