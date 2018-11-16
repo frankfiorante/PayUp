@@ -11,6 +11,7 @@ $(document).ready(function() {
     if (localStorage.length > 0) {
         $('#trans').show();
         $('#transTable').show();
+        $('#clearTrans').show();
         for (i = 0; i < namesData.length; i++) {
             for (j = 0; j < namesData.length; j++) 
             var newRowContent1 = "<tr><td>" + namesData[i] + "</td><td>" + amountsData[i] + "</td></tr>";
@@ -21,6 +22,11 @@ $(document).ready(function() {
     } else {
         $('#trans').hide();
         $('#transTable').hide();
-
+        $('#clearTrans').hide();
     }
 });
+
+function clearStorage() {
+    localStorage.clear();
+    location.reload();
+}
