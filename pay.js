@@ -18,8 +18,25 @@ function btnSelectOwe(){
 
 //Save names through local storage
 let namesArray = localStorage.getItem('names') ? JSON.parse(localStorage.getItem('names')) : [];
+let descriptionsArray = localStorage.getItem('descriptions') ? JSON.parse(localStorage.getItem('descriptions')) : [];
+let amountsArray = localStorage.getItem('amounts') ? JSON.parse(localStorage.getItem('amounts')) : [];
+let datesArray = localStorage.getItem('dates') ? JSON.parse(localStorage.getItem('dates')) : [];
+
 document.getElementById('form').addEventListener('submit', function() {
     var names = document.getElementById('name').value;
+    var descriptions = document.getElementById('description').value;
+    var amounts = document.getElementById('amount').value;
+    var dates = document.getElementById('date').value;
+
     namesArray.push(names);
+    descriptionsArray.push(descriptions);
+    amountsArray.push(amounts);
+    datesArray.push(dates);
+
+
     localStorage.setItem('names', JSON.stringify(namesArray));
+    localStorage.setItem('descriptions', JSON.stringify(descriptionsArray));
+    localStorage.setItem('amounts', JSON.stringify(amountsArray));
+    localStorage.setItem('dates', JSON.stringify(datesArray));
+    alert();
 })
