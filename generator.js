@@ -14,7 +14,7 @@ $(document).ready(function() {
         $('#clearTrans').show();
         for (i = 0; i < namesData.length; i++) {
             for (j = 0; j < namesData.length; j++) 
-            var newRowContent1 = "<tr><td>" + namesData[i] + "</td><td>" + amountsData[i] + "</td></tr>";
+            var newRowContent1 = "<tr><td>" + namesData[i] + "</td><td> $" + amountsData[i] + "</td></tr>";
             $(newRowContent1).appendTo($('#transTable'));
         }
         
