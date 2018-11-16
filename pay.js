@@ -38,5 +38,4 @@ document.getElementById('form').addEventListener('submit', function() {
     localStorage.setItem('descriptions', JSON.stringify(descriptionsArray));
     localStorage.setItem('amounts', JSON.stringify(amountsArray));
     localStorage.setItem('dates', JSON.stringify(datesArray));
-    alert();
 })
